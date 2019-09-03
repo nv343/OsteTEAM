@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+    background-position: center;
+  background-image: url("imagens/bg.png");
+  background-color: white;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+<link rel="shortcut icon" type="image/x-icon" href="imagens/logo.png" />
+  <title>Ostebrød</title>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="principal.html" target = "_self" >Home</a>
+  <a href="teams.html" target = "_self" >Team</a>
+  <a class="active" href="news.html" target = "_self" >News</a>
+  <a href="about.html" target = "_self" >About</a>
+</div>
+
+<p>
+  <div style="padding-left:16px">
+  
+<form action="obrigado.html" method="post">
+  Nome:
+  <input name="firstname" type="text">
+  <br><br>
+  Gênero:
+  <select>
+    <option value = "masculino"> Masculino</option>
+    <option value = "feminino"> Feminino</option>
+    <option value = "outro"> Outro </option>
+  
+</select>
+  <br><br>
+  Faixa Etária: <br><br>
+  <input type="radio" name="idade" value = "18"> Menor de 18<br>
+  <input type="radio" name="idade" value = "entre"> Entre 18 e 25<br>
+  <input type="radio" name="idade" value = "acima"> Acima de 25<br>
+
+  <br>O que você gostaria de ver em nosso site? <br><br>
+
+  <textarea name="message" rows="10" cols="35">
+  </textarea><br><br>
+
+  <input type="reset" value = "Voltar">
+  <input type="submit" value = "Confirmar">
+  
+</form>
+
+</div>
+
+
+</body>
+</html>
